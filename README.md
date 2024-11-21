@@ -42,3 +42,31 @@ To get started with the project, clone the repository and install the necessary 
    cd invoice-management-swipe
    npm install
 ```
+
+## Usage
+
+1. Start the development server:
+```bash
+   npm start
+```
+2. Upload Files:
+- The app allows users to upload various types of files (Excel, PDF, Image). Upon uploading, the data will be automatically extracted and displayed in the respective tabs.
+
+3. Tabs:
+   - Invoices Tab: View all invoices with relevant details.
+   - Products Tab: See a list of all products with prices and quantities.
+   - Customers Tab: View customer data, including total purchase amounts.
+
+## Technologies Used
+   - React.js: For building the user interface.
+   - Redux: For centralized state management and real-time synchronization.
+   - XLSX.js: For handling Excel file data.
+   - PDF-lib: For reading and processing PDF files.
+
+## AI Test Cases
+The application supports the following test cases for data extraction:
+   - Invoice PDFs
+   - Invoice PDFs + Images
+   - Excel Files
+   - All Types of Files
+For each test case, the application extracts Invoice, Product, and Customer details and updates them in the respective tabs. If any required information is missing from the file, the missing fields will be highlighted in the app.
